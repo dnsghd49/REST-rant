@@ -43,6 +43,7 @@ basic setup for the project!
 **places** 
 
 | Field | Type |
+| ----- | ---- |
 | name | String |
 | city | String |
 | state | String |
