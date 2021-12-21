@@ -14,6 +14,8 @@ basic setup for the project!
 
 * [Routes](#Routes)
 
+* [DB](#DB)
+
 * [Installation](#installation)
 
 * [Usage](#usage)
@@ -35,6 +37,17 @@ basic setup for the project!
 | POST | `/places/:id/rant` | Create a rant (comment) about a particular place |
 | DELETE | `/places/:id/rant/:rantId` | Delete a rant (comment) about a particular place |
 | GET | `*` | 404 page (matches any route not defined above) |
+
+## DB
+
+**places** 
+
+| Field | Type |
+| name | String |
+| city | String |
+| state | String |
+| cuisines | String |
+| pic | String |
 
 ## Installation
 
