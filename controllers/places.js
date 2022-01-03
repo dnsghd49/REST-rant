@@ -14,7 +14,7 @@ router.get('/', (req, res) => {
         cuisines: 'Coffee, Bakery',
         pic: 'http://placekitten.com/250/250'
     }]
-    res.render('places/index', {places})
+    res.render('places/index', { places })
 })
 
 router.get('/places', (req, res) => {
@@ -24,8 +24,8 @@ router.get('/places', (req, res) => {
 router.post('/places', (req, res) => {
 })
 
-router.get('/places/new', (req, res) => {
-    res.send('GET /places/new')
+router.get('/new', (req, res) => {
+    res.render('places/new')
 })
 
 router.get('/places/:id', (req, res) => {
