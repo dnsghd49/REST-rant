@@ -1,5 +1,6 @@
 // Modules and Globals
 require('dotenv').config()
+const PORT = 3000;
 const express = require('express')
 const app = express()
 const methodOverride = require('method-override')
@@ -24,4 +25,6 @@ app.get('*', (req, res) => {
 })
 
 // Listen for Connections
-app.listen(process.env.PORT)
+app.listen(process.env.PORT, () => {
+    console.log(`App running on port ${PORT}!`)
+});
