@@ -25,4 +25,25 @@ router.post('/', (req, res) => {
     res.redirect('/places')
 })
 
+router.get('/:id', (req, res) => {
+    let id = Number(req.params.id)
+    if (isNaN(id)) {
+        res.render('error404')
+    }
+    else if (!places[id]) {
+        res.render('error404')
+    }
+    else {
+        res.render('places/show', { place: places[id], id })
+    }
+})
+
+router.get('/:id/edit', (req, res) => {
+    res.send('GET /places/id/edit')
+})
+
+router.delete('/:id', (req, res) => {
+    res.send('STUB DELETE places/:id')
+})
+
 module.exports = router
