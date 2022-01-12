@@ -7,6 +7,7 @@ function show(data) {
             <main>
                 <h1>{data.place.name}</h1>
                 <img src={data.place.pic} alt="coffee picture" /> <br />
+                {/* need to show more stuff on this view */}
                 <a href={`/places/${data.id}/edit`} className="btn btn-warning">
                     Edit
                 </a>
